@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poster</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 200px;
+            border: 3px solid black;
+            margin: 200px auto;
+            position: relative;
+        }
+        .items{
+            height: inherit;
+            width: inherit;
+            border: inherit;
+            top: 0px;   
+            position: absolute;
+        }
+        #d1{
+            background-color: chartreuse;
+            z-index: 2;
+        }
+        #d2{
+            background-color: cadetblue;
+            z-index: 3;
+        }
+        #d3{
+            background-color: blue;
+            z-index: 0;
+        }
+        #d4{
+            background-color: coral;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="d1">A</div>
+        <div class="items" id="d2">B</div>
+        <div class="items" id="d3">C</div>
+        <div class="items" id="d4">D</div>
+    </div>
+</body>
+</html>

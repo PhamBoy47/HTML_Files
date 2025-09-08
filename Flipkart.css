@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #F1F2F4;
+}
+
+.items {
+    display: flex;
+    background-color: #FFFFFF;
+    height: 130px;
+    width: 98%;
+    margin: 10px auto;
+    /* box-shadow: 0px 0px 2px rgb(132, 129, 129); */
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.box{
+    height: 300px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 17px;
+    margin-left: 30px;
+    /* position: fixed;
+    top: 70px;
+    right: 300px;
+    z-index: 2; */
+}
+.first_option{
+    display: block;
+    padding: 7px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.first_option>span{
+    font-size: 20px;
+}
+
+.boxes {
+    height: 90px;
+    width: 100px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box-items {
+    height: 80%;
+}
+
+.box-items:hover {
+    cursor: pointer;
+}
+
+a {
+    height: inherit;
+}
+
+img {
+    height: inherit;
+    padding: 5px;
+}
+
+h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    height: 40px;
+    padding: 8px;
+    left: 8px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.search_area {
+    position: absolute;
+    left: 225px;
+    top: 16px;
+    background-color: #F0F5FF;
+    padding-left: 5px;
+    border-radius: 8px;
+}
+.search_area i{
+    color: crimson;
+    padding-left: 4px;
+}
+.search_area input{
+    outline: none;
+}
+[placeholder] {
+    height: 40px;
+    width: 400px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500px;
+    font-size: large;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F0F5FF;
+}
+
+.login {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    left: 680px;
+    gap: 5px;
+    top: 16px;
+}
+.login:hover{
+    background-color: #2A55E5;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.login i {
+    font-size: 22px;
+}
+.bi.bi-chevron-down{
+    padding: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    bottom: 3px;
+    top: 25px;
+    align-items: center;
+}
+.login:hover .bi.bi-chevron-down{
+    transition: transform 0.4s ease;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+span {
+    font-size: 19px;
+    padding: 0px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.shoppingcart {
+    display: flex;
+    position: absolute;
+    left: 850px;
+    gap: 5px;
+    top: 22px;
+}
+
+.shoppingcart i {
+    font-size: 22px;
+}
+
+.shoppingcart:hover {
+    cursor: pointer;
+}
+
+.shoppingcart h3 {
+    font-size: 17px;
+    padding: 0px;
+}
+
+.seller {
+    display: flex;
+    position: absolute;
+    left: 990px;
+    gap: 3px;
+    top: 22px;
+}
+
+.seller i {
+    font-size: 22px;
+}
+
+.seller:hover {
+    cursor: pointer;
+}
+
+.seller h3 {
+    font-size: 17px;
+    padding: 0px;
+}
+.dots{
+    display: flex;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+    left: 1200px;
+    gap: 3px;
+    top: 15px;
+    font-size: 22px;
+}
+.dots:hover{
+    cursor: pointer;
+    background-color: #F1F2F4;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+.dot-menu{
+    position: absolute;
+    align-items: center;
+    top: 62px;
+    height: 148px;
+    width: 240px;
+    left: 1000px;
+    background-color: #F0F5FF;
+    border-radius: 9px;
+    box-shadow: 0px 0px 18px rgb(179, 176, 176);
+    display: none;
+}
+.options{
+    height: 37px;
+    width: inherit;
+    align-content: center;
+    background-color: #FFFFFF;
+    border-radius: inherit;
+}
+.dot-menu a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.dot-menu:hover #op1,#op2,#op3,#op4{
+    background-color: #F1F2F4;
+}
+.dot-menu i{
+    padding-left: 13px;
+}
+.dots:hover~.dot-menu{
+    display: initial;
+    transition: all 0.6s ease;
+
+}
+.dot-menu:hover{
+    display: initial;
+}
+.adver img {
+    height: 700px;
+    width: 98%;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+
+.items2 {
+    display: flex;
+    background-color: #FFFFFF;
+    height: 130px;
+    width: 97.5%;
+    margin: 10px auto;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+.head{
+    position: relative;
+}
+.boxes2 {
+    height: 90px;
+    width: 100px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box-items2 {
+    height: 80%;
+}
+
+.box-items2:hover {
+    cursor: pointer;
+}
+
+.normal {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 50px;
+    top: 0;
+
+}
